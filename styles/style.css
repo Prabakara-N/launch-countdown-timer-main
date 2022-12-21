@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@700&display=swap");
+
+* {
+  padding: 0;
+  margin-top: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+:root {
+  --clr-Grayish-blue: hsl(237, 18%, 59%);
+  --clr-Soft-red: hsl(345, 95%, 68%);
+  --clr-White: hsl(0, 0%, 100%);
+  --clr-Dark-desaturated-blue: hsl(236, 21%, 26%);
+  --clr-Very-dark-blue: hsl(235, 16%, 14%);
+  --clr-Very-dark-blue: hsl(234, 17%, 12%);
+  --box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25),
+    -2px -2px 2px rgba(0, 0, 0, 0.25);
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Red Hat Text", sans-serif;
+  font-size: 14px;
+  background-color: hsl(235, 16%, 14%);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.stars {
+  position: absolute;
+}
+
+.hills {
+  position: absolute;
+  bottom: 0;
+}
+
+/* Container */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 70vh;
+}
+
+.container h1 {
+  color: white;
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 50px;
+}
+
+/* Countdown */
+.countdown {
+  display: flex;
+  /* flex-wrap: wrap; */
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+.countdown div {
+  margin: 10px;
+}
+
+.countdown p {
+  background-color: hsl(236, 21%, 26%);
+  color: hsl(345, 95%, 68%);
+  box-shadow: 0 8px 0 rgba(0, 0, 0, 0.25);
+  font-size: 46px;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.countdown h3 {
+  color: hsl(237, 18%, 59%);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+/* socials */
+.icon-container {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 999;
+  cursor: pointer;
+}
+
+.icon {
+  font-size: 1.75rem;
+  color: var(--clr-Grayish-blue);
+  padding: 0.75rem;
+  transition: all 0.4s;
+}
+
+.icon:hover {
+  color: var(--clr-Soft-red);
+  transition: all 0.4s;
+  transform: scale(1.1) translateZ(-5px);
+}
+
+@media (max-width: 500px) {
+  .container {
+    max-width: auto;
+    padding: 0 20px;
+  }
+
+  .countdown {
+    display: flex;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+  }
+
+  .timer {
+    font-size: 1rem;
+    padding: 1rem;
+  }
+
+  .countdown h3 {
+    font-size: 0.8rem;
+  }
+
+  .icon-container {
+    margin-bottom: auto;
+  }
+
+  .container h1 {
+    text-align: center;
+  }
+}
+
+@media (min-width: 1440px) {
+  .stars img,
+  .hills img {
+    width: 1600px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .stars img,
+  .hills img {
+    width: 1920px;
+  }
+}
