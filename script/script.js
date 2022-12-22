@@ -6,7 +6,7 @@ const secondsEl = document.getElementById("seconds");
 
 //functions
 const countdown = () => {
-  const endDate = new Date("December 25, 2022 00:00:00").getTime(); //date future
+  const endDate = new Date("December 31, 2022 00:00:00").getTime(); //date future
   const now = new Date().getTime(); // date today
 
   const difference = endDate - now;

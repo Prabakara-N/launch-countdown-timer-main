@@ -49,7 +49,7 @@ body {
 
 .hills {
   position: absolute;
-  bottom: 0;
+  bottom: -60px;
 }
 
 /* Container */
@@ -72,7 +72,7 @@ body {
 /* Countdown */
 .countdown {
   display: flex;
-  /* flex-wrap: wrap; */
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-evenly;
   text-align: center;
@@ -96,17 +96,18 @@ body {
   text-transform: uppercase;
   letter-spacing: 2px;
   font-size: 16px;
-  margin-top: 10px;
+  margin-top: -15px;
 }
 
 /* socials */
 .icon-container {
   position: absolute;
-  bottom: 30px;
+  bottom: -30px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 999;
   cursor: pointer;
+  display: flex;
 }
 
 .icon {
